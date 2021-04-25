@@ -26,15 +26,15 @@ window.addEventListener('DOMContentLoaded', async function() {
     <span>Noober Purple</span>
   </h1>
 
-  
-  <div class="border-4 border-gray-500 p-4 my-4 text-left">
+
+  <div class="border-4 border-purple-500 p-4 my-4 text-left">
     <div class="flex">
       <div class="w-1/2">
         <h2 class="text-2xl py-1">${passengerFirstname} ${passengerLastname}</h2>
         <p class="font-bold text-gray-600">${passengerPhone}</p>
       </div>
       <div class="w-1/2 text-right">
-        <span class="rounded-xl bg-gray-600 text-white p-2">${passengerAmount} passengers
+        <span class="rounded-xl bg-purple-600 text-white p-2">${passengerAmount} passengers
         </span>
       </div>
     </div>
