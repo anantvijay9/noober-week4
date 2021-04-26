@@ -21,12 +21,12 @@ window.addEventListener('DOMContentLoaded', async function() {
         let rideElements = document.querySelector(`.rides`)
 
     // Check if the ride is Noober Purple
-    if (ride.purpleRequested == true) {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+    if (ride.purpleRequested == true) 
+    // If it is, then insert the following HTML
+    {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
     <i class="fas fa-car-side"></i>
     <span>Noober Purple</span>
   </h1>
-
-
   <div class="border-4 border-purple-500 p-4 my-4 text-left">
     <div class="flex">
       <div class="w-1/2">
@@ -50,8 +50,10 @@ window.addEventListener('DOMContentLoaded', async function() {
         <p>${dropLocationCityStateZip}</p>
       </div>
     </div>`)}
-
-    else if (ride.numberOfPassengers > 3) {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+    //If it doesn't satisfy the Noober Purple criteria, check if the ride has more than 3 passengers and make it a Noober XL
+    else if (ride.numberOfPassengers > 3) 
+    //If above condition is satisfied, insert this HTML
+    {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
     <i class="fas fa-car-side"></i>
     <span>Noober XL</span>
   </h1>
@@ -79,7 +81,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         <p>${dropLocationCityStateZip}</p>
       </div>
     </div>`)}
-
+    //If none of the above two criteria are met, default to Noober X
     else {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
     <i class="fas fa-car-side"></i>
     <span>Noober X</span>
